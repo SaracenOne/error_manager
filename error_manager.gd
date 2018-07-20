@@ -9,5 +9,5 @@ func error(p_error_string):
 	
 func fatal_error(p_error_string):
 	printerr(p_error_string)
-	if Engine.is_editor_hint():
+	if not Engine.is_editor_hint():
 		get_tree().quit() #default behavior
